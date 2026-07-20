@@ -274,7 +274,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     .gallery-head { margin-bottom: 3rem; }
     .gallery-note { font-size: 0.88rem; color: var(--mid); margin-top: 0.5rem; }
 .gallery-grid { display: grid; grid-template-columns: repeat(12,1fr); grid-auto-rows: 250px; gap: 6px; }
-.gallery-item { overflow: hidden; border-radius: 2px; position: relative; cursor: pointer; }
+.gallery-item { overflow: hidden; border-radius: 2px; position: relative; }
 .gallery-item img, .about-frame img { width:100%; height:100%; object-fit:cover; display:block; }
 .about-frame img { object-position:center top; }
     .g1 { grid-column: span 4; grid-row: span 2; }
@@ -397,7 +397,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .booking-wrap { grid-template-columns:1fr; gap:3rem; }
       .testi-grid { grid-template-columns:1fr; }
   .gallery-grid { grid-template-columns:1fr 1fr; grid-auto-rows:250px; }
-      .g1,.g2,.g3,.g4,.g5,.g6 { grid-column:span 1; grid-row:span 1; }
+  .g1,.g2,.g3,.g4,.g5,.g6 { grid-column:span 1; grid-row:span 1; }
+  .gallery-overlay { opacity:1; align-items:flex-end; justify-content:flex-start; padding:1rem; background:linear-gradient(to top,rgba(8,8,8,0.82),transparent 65%); }
       footer { padding:2.5rem 1.5rem 1.5rem; }
       .footer-inner { flex-direction:column; align-items:flex-start; }
       .services-head { flex-direction:column; }
